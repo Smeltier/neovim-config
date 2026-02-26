@@ -36,15 +36,28 @@ keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
 
---- Line moving
-keymap.set("n", "<leader>k", function()
-  local n = vim.v.count1
-  vim.cmd("move .-" .. n)
-  vim.cmd("normal ==")
-end, opts)
-
-keymap.set("n", "<leader>j", function()
-  local n = vim.v.count1
-  vim.cmd("move ." .. n)
-  vim.cmd("normal ==")
-end, opts)
+-- --- Line moving - Normal Mode
+-- keymap.set("n", "<leader>k", function()
+--   local n = vim.v.count1
+--   vim.cmd("move .-" .. n)
+--   vim.cmd("normal ==")
+-- end, opts)
+--
+-- keymap.set("n", "<leader>j", function()
+--   local n = vim.v.count1
+--   vim.cmd("move ." .. n)
+--   vim.cmd("normal ==")
+-- end, opts)
+--
+-- --- Line moving - Visual Mode
+-- keymap.set("v", "<leader>k", function()
+--   local n = vim.v.count1
+--   vim.cmd("move .-" .. n)
+--   vim.cmd("normal ==")
+-- end, opts)
+--
+-- keymap.set("v", "<leader>j", function()
+--   local n = vim.v.count1
+--   vim.cmd("move ." .. n)
+--   vim.cmd("normal ==")
+-- end, opts)
